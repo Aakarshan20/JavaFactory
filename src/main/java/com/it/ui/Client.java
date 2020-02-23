@@ -9,7 +9,7 @@ public class Client {
         //AccountServiceImpl as = new AccountServiceImpl();
         for(int i=0; i<5; i++){
             AccountServiceImpl as = (AccountServiceImpl)BeanFactory.getBean("accountService");
-            //System.out.println(as);
+            System.out.println(as);
             as.saveAccount();
         }
 

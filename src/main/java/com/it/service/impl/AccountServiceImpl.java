@@ -9,10 +9,11 @@ public class AccountServiceImpl implements IAccountService {
     //private AccountDaoImpl accountDao = new AccountDaoImpl();
     private AccountDaoImpl accountDao = (AccountDaoImpl)BeanFactory.getBean("accountDao");
 
-    private int i=1;
+    //private int i=1;
 
     @Override
     public void saveAccount() {
+        int i=1;
         accountDao.saveAccount();
         System.out.println(i);
         i++;
